@@ -100,6 +100,10 @@ bindkey -v
 # https://unix.stackexchange.com/questions/44115/how-do-i-perform-a-reverse-history-search-in-zshs-vi-mode
 bindkey "^R" history-incremental-search-backward
 
+# Map reverse menu complete to SHIFT+TAB
+# https://stackoverflow.com/questions/815686/unable-to-make-a-backward-tab-as-shift-tab-in-zsh
+bindkey '^[[Z' reverse-menu-complete
+
 # If things start to lag
 # KEYTIMEOUT=1
 
