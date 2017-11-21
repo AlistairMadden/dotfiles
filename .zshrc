@@ -118,3 +118,15 @@ eval $(dircolors ~/.zsh/dircolors-solarized/dircolors.ansi-dark)
 zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -Uz compinit
 compinit
+
+# Pyenv and pyenv-virtualenv
+# https://github.com/pyenv/pyenv#installation
+# https://github.com/pyenv/pyenv-virtualenv
+#
+# Remember to install all the required build tools!
+# https://github.com/pyenv/pyenv/wiki/Common-build-problems
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
