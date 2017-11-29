@@ -52,6 +52,8 @@ let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language
 let g:ycm_complete_in_comments = 1 " Completion in comments
 let g:ycm_complete_in_strings = 1 " Completion in string
 
+let g:syntastic_python_pylint_args = "--load-plugins pylint_django"
+
 let python_highlight_all=1
 
 " http://ethanschoonover.com/solarized/vim-colors-solarized
